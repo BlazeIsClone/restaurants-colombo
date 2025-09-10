@@ -2,19 +2,107 @@
 	{
 		"id": "neko-and-kopi",
 		"name": "Neko and Kopi",
+		"type": "cafe",
 		"lat": 6.889046556088736,
-		"lng": 79.88695985390348
+		"lng": 79.88695985390348,
+		"main_image": "https://hive-ceylon-xo.sgp1.digitaloceanspaces.com/941/itaebetlwgpdpzapokve.webp",
+		"gallery": [
+			"https://hive-ceylon-xo.sgp1.digitaloceanspaces.com/989/483257354_18057552326485710_4371605739653819509_n.webp",
+			"https://hive-ceylon-xo.sgp1.digitaloceanspaces.com/1006/Cold-Cappuccino.webp",
+			"https://hive-ceylon-xo.sgp1.digitaloceanspaces.com/1005/kids-bento-box.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "7:00 AM - 10:00 PM"
+		},
+		"address": "123 Galle Road, Colombo 03",
+		"rating": 8.2,
+		"perfect_for": [
+			"casual_dining",
+			"solo_dining",
+			"coffee_meeting"
+		],
+		"deals": [
+			"$2_coffee_specials",
+			"happy_hour_3_5pm"
+		],
+		"description": "A cozy cat-themed cafe serving artisanal coffee and light bites. Perfect for a relaxed morning coffee or afternoon work session.",
+		"reservation_link": "https://opentable.com/neko-and-kopi"
 	},
 	{
 		"id": "the-english-cake-company",
-		"name": "The English Cake Company ",
+		"name": "The English Cake Company",
+		"type": "bakery",
 		"lat": 6.891783432188516,
-		"lng": 79.871153255706
+		"lng": 79.871153255706,
+		"main_image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&h=600&fit=crop",
+		"gallery": [],
+		"opening_hours": {
+			"days": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "8:00 AM - 8:00 PM"
+		},
+		"address": "456 Horton Place, Colombo 07",
+		"rating": 7.8,
+		"perfect_for": [
+			"casual_dining",
+			"family_dining",
+			"dessert_lovers"
+		],
+		"deals": [
+			"buy_2_cakes_get_1_free",
+			"afternoon_tea_special"
+		],
+		"description": "Traditional English bakery offering freshly baked cakes, pastries, and afternoon tea. A delightful spot for families and dessert enthusiasts.",
+		"reservation_link": "https://opentable.com/english-cake-company"
 	},
 	{
 		"id": "giovannis",
 		"name": "Giovanni's",
+		"type": "fine_dining",
 		"lat": 6.891751500259637,
-		"lng": 79.86805259507274
+		"lng": 79.86805259507274,
+		"main_image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&h=600&fit=crop",
+		"gallery": [],
+		"opening_hours": {
+			"days": [
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "6:00 PM - 11:00 PM"
+		},
+		"address": "789 Duplication Road, Colombo 03",
+		"rating": 9.1,
+		"perfect_for": [
+			"date_night",
+			"group_dining",
+			"fine_dining"
+		],
+		"deals": [
+			"$2_oysters",
+			"wine_pairing_menu",
+			"early_bird_special"
+		],
+		"description": "Authentic Italian fine dining experience with fresh pasta, premium wines, and elegant ambiance. Perfect for special occasions and romantic dinners.",
+		"reservation_link": "https://opentable.com/giovannis-colombo"
 	}
 ]

@@ -3,6 +3,9 @@
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 import { useCallback, useState } from "react";
 import restaurants from "@/data/restaurants.json";
+import { RestaurantDetails } from "./RestaurantDetails";
+import { createCustomMarkerIcon } from "@/utils/markerUtils";
+import { MarkerLegend } from "./MarkerLegend";
 
 export const Map = () => {
   const [map, setMap] = useState<google.maps.Map | null>();
@@ -47,29 +50,27 @@ export const Map = () => {
   }
 
   return (
-    <div className="flex h-screen">
-      <article className="w-3/5 overflow-y-scroll p-4 border-r border-gray-300">
+    <div className="container mx-auto px-4 flex h-screen">
+      <article className="w-[50%] overflow-y-scroll p-4 border-r border-gray-300">
         <div className="mb-4">
-          <h1 className="mb-2 text-2xl">Restaurants</h1>
+          <h1 className="mb-2 text-2xl font-semibold">Highest Rated Restaurants In Colombo</h1>
         </div>
         {restaurants.map((restaurant) => (
           <div
             key={restaurant.id}
             id={restaurant.id}
-            className={`restaurant mb-6 p-4 border rounded-lg shadow-sm h-[800px]`}
+            className={`restaurant mb-6 p-6 border rounded-lg shadow-sm bg-white hover:shadow-md transition-shadow duration-200`}
           >
-            <h3
-              className="text-xl font-semibold"
-              onClick={() => handleMarkerClick(restaurant.id)}
-            >
-              {restaurant.name}
-            </h3>
-            <p>Details about {restaurant.name}</p>
+            <RestaurantDetails
+              restaurant={restaurant as any}
+              onNameClick={() => handleMarkerClick(restaurant.id)}
+            />
           </div>
         ))}
       </article>
 
-      <div className="w-2/5">
+      <div className="right-0 absolute w-[50%]">
+        <MarkerLegend className="absolute top-4 right-4 z-10" />
         <GoogleMap
           onLoad={onLoad}
           onUnmount={onUnmount}
@@ -144,6 +145,7 @@ export const Map = () => {
               key={restaurant.id}
               position={{ lat: restaurant.lat, lng: restaurant.lng }}
               onClick={() => handleMarkerClick(restaurant.id)}
+              icon={createCustomMarkerIcon(restaurant.type, 40)}
             />
           ))}
         </GoogleMap>
