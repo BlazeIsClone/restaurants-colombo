@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { RatingDisplay } from "./RatingDisplay";
+import Image from "next/image";
 
 interface ImageGalleryProps {
     main_image: string;
@@ -17,10 +18,12 @@ export const ImageGallery = ({ main_image, gallery, rating }: ImageGalleryProps)
     return (
         <div className="space-y-3">
             <div className="relative">
-                <img
+                <Image
                     src={selectedImage}
                     alt="Restaurant"
                     className="w-full h-[400px] object-cover rounded-lg shadow-md"
+                    width={800}
+                    height={600}
                 />
                 <RatingDisplay rating={rating} />
             </div>
@@ -35,10 +38,12 @@ export const ImageGallery = ({ main_image, gallery, rating }: ImageGalleryProps)
                             : "border-gray-200 hover:border-gray-300"
                             }`}
                     >
-                        <img
+                        <Image
                             src={image}
                             alt={`Gallery ${index + 1}`}
                             className="w-full h-full object-cover"
+                            width={400}
+                            height={300}
                         />
                     </button>
                 ))}

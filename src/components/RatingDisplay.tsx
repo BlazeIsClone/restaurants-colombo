@@ -9,13 +9,6 @@ const getRatingColor = (rating: number) => {
     return 'bg-red-500';
 };
 
-const getRatingTextColor = (rating: number) => {
-    if (rating >= 8.5) return 'text-green-700';
-    if (rating >= 7.5) return 'text-yellow-700';
-    if (rating >= 6.5) return 'text-orange-700';
-    return 'text-red-700';
-};
-
 export const RatingDisplay = ({ rating }: RatingDisplayProps) => {
     return (
         <div className="absolute top-4 right-4 z-10">

@@ -6,6 +6,7 @@ import restaurants from "@/data/restaurants.json";
 import { RestaurantDetails } from "./RestaurantDetails";
 import { createCustomMarkerIcon } from "@/utils/markerUtils";
 import { MarkerLegend } from "./MarkerLegend";
+import { Restaurant } from "@/types/restaurant";
 
 export const Map = () => {
   const [map, setMap] = useState<google.maps.Map | null>();
@@ -62,7 +63,7 @@ export const Map = () => {
             className={`restaurant mb-6 p-6 border rounded-lg shadow-sm bg-white hover:shadow-md transition-shadow duration-200`}
           >
             <RestaurantDetails
-              restaurant={restaurant as any}
+              restaurant={restaurant as Restaurant}
               onNameClick={() => handleMarkerClick(restaurant.id)}
             />
           </div>
