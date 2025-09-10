@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: [
+      "hive-ceylon-xo.sgp1.digitaloceanspaces.com",
+      "images.unsplash.com"
+    ],
+  },
 };
 
 export default nextConfig;
