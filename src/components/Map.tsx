@@ -1,17 +1,29 @@
 "use client";
 
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
-import { useCallback, useState } from "react";
+import { useCallback, useState, useEffect, useRef } from "react";
 import restaurants from "@/data/restaurants.json";
 import { RestaurantDetails } from "./RestaurantDetails";
 import { Restaurant } from "@/types/restaurant";
 
 export const Map = () => {
   const [map, setMap] = useState<google.maps.Map | null>();
+  const [activeRestaurantId, setActiveRestaurantId] = useState<string | null>(null);
+  const [mapCenter, setMapCenter] = useState({ lat: 6.9271, lng: 79.8612 });
+  const [mapZoom, setMapZoom] = useState(12);
+  const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const onLoad = useCallback((map: google.maps.Map) => setMap(map), []);
-
   const onUnmount = useCallback(() => setMap(null), []);
+
+  const focusMapOnRestaurant = useCallback((id: string) => {
+    const restaurant = restaurants.find((r) => r.id === id);
+    if (!restaurant) return;
+
+    // Update map center and zoom state
+    setMapCenter({ lat: restaurant.lat, lng: restaurant.lng });
+    setMapZoom(17);
+  }, []);
 
   const handleMarkerClick = (id: string) => {
     const element = document.getElementById(id);
@@ -20,19 +32,9 @@ export const Map = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
 
-    if (map) {
-      map.setZoom(17);
-      map.panTo({
-        lat:
-          restaurants.find((restaurant) => {
-            return restaurant.id === id;
-          })?.lat ?? 0.0,
-        lng:
-          restaurants.find((restaurant) => {
-            return restaurant.id === id;
-          })?.lng ?? 0.0,
-      });
-    }
+    // Set as active restaurant and focus map
+    setActiveRestaurantId(id);
+    focusMapOnRestaurant(id);
   };
 
   if (!process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY) {
@@ -44,15 +46,77 @@ export const Map = () => {
     libraries: ["places"],
   });
 
+  // Simple scroll handler
+  useEffect(() => {
+    if (!isLoaded || !map) return;
+
+    // Set initial focus on first restaurant
+    if (!activeRestaurantId && restaurants.length > 0) {
+      const firstRestaurant = restaurants[0];
+      setActiveRestaurantId(firstRestaurant.id);
+      focusMapOnRestaurant(firstRestaurant.id);
+    }
+
+    const handleScroll = () => {
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current);
+      }
+
+      scrollTimeoutRef.current = setTimeout(() => {
+        const scrollContainer = document.querySelector('.overflow-y-scroll');
+        if (!scrollContainer) return;
+
+        const containerRect = scrollContainer.getBoundingClientRect();
+        const containerCenter = containerRect.top + containerRect.height / 2;
+
+        let closestRestaurant = null;
+        let minDistance = Infinity;
+
+        restaurants.forEach((restaurant) => {
+          const element = document.getElementById(restaurant.id);
+          if (!element) return;
+
+          const elementRect = element.getBoundingClientRect();
+          const elementCenter = elementRect.top + elementRect.height / 2;
+          const distance = Math.abs(elementCenter - containerCenter);
+
+          if (distance < minDistance) {
+            minDistance = distance;
+            closestRestaurant = restaurant.id;
+          }
+        });
+
+        if (closestRestaurant && closestRestaurant !== activeRestaurantId) {
+          setActiveRestaurantId(closestRestaurant);
+          focusMapOnRestaurant(closestRestaurant);
+        }
+      }, 150);
+    };
+
+    const scrollContainer = document.querySelector('.overflow-y-scroll');
+    if (scrollContainer) {
+      scrollContainer.addEventListener('scroll', handleScroll, { passive: true });
+    }
+
+    return () => {
+      if (scrollContainer) {
+        scrollContainer.removeEventListener('scroll', handleScroll);
+      }
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current);
+      }
+    };
+  }, [isLoaded, map, focusMapOnRestaurant, activeRestaurantId]);
+
   if (!isLoaded) {
     return <div>Loading...</div>;
   }
 
   return (
     <div className="container mx-auto px-4 flex h-screen">
-      <article className="w-[50%] overflow-y-scroll p-4 border-r border-gray-300">
+      <article className="w-[50%] overflow-y-scroll pe-10 border-r border-gray-300">
         <div className="mb-4">
-          <h1 className="mb-2 text-2xl font-semibold">
+          <h1 className="my-2 text-2xl font-semibold">
             Highest Rated Restaurants In Colombo
           </h1>
         </div>
@@ -60,7 +124,7 @@ export const Map = () => {
           <div
             key={restaurant.id}
             id={restaurant.id}
-            className={`restaurant my-6 p-6 border rounded-lg shadow-sm bg-white hover:shadow-md transition-shadow duration-200`}
+            className="restaurant my-6 pb-6 border-b border-b-gray-300 bg-white transition-all duration-300"
           >
             <RestaurantDetails
               restaurant={restaurant as Restaurant}
@@ -137,14 +201,31 @@ export const Map = () => {
               },
             ],
           }}
-          center={{ lat: 6.9271, lng: 79.8612 }}
-          zoom={12}
+          center={mapCenter}
+          zoom={mapZoom}
         >
           {restaurants.map((restaurant) => (
             <Marker
               key={restaurant.id}
               position={{ lat: restaurant.lat, lng: restaurant.lng }}
               onClick={() => handleMarkerClick(restaurant.id)}
+              icon={{
+                url: activeRestaurantId === restaurant.id
+                  ? 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`
+                    <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20" cy="20" r="18" fill="#3B82F6" stroke="#1D4ED8" stroke-width="4"/>
+                      <circle cx="20" cy="20" r="8" fill="white"/>
+                    </svg>
+                  `)
+                  : 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`
+                    <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="15" cy="15" r="12" fill="#EF4444" stroke="#DC2626" stroke-width="2"/>
+                      <circle cx="15" cy="15" r="6" fill="white"/>
+                    </svg>
+                  `),
+                scaledSize: new google.maps.Size(activeRestaurantId === restaurant.id ? 40 : 30, activeRestaurantId === restaurant.id ? 40 : 30),
+                anchor: new google.maps.Point(activeRestaurantId === restaurant.id ? 20 : 15, activeRestaurantId === restaurant.id ? 20 : 15),
+              }}
             />
           ))}
         </GoogleMap>
