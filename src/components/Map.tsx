@@ -4,7 +4,6 @@ import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 import { useCallback, useState } from "react";
 import restaurants from "@/data/restaurants.json";
 import { RestaurantDetails } from "./RestaurantDetails";
-import { createCustomMarkerIcon } from "@/utils/markerUtils";
 import { Restaurant } from "@/types/restaurant";
 
 export const Map = () => {
@@ -53,7 +52,9 @@ export const Map = () => {
     <div className="container mx-auto px-4 flex h-screen">
       <article className="w-[50%] overflow-y-scroll p-4 border-r border-gray-300">
         <div className="mb-4">
-          <h1 className="mb-2 text-2xl font-semibold">Highest Rated Restaurants In Colombo</h1>
+          <h1 className="mb-2 text-2xl font-semibold">
+            Highest Rated Restaurants In Colombo
+          </h1>
         </div>
         {restaurants.map((restaurant) => (
           <div
@@ -144,7 +145,6 @@ export const Map = () => {
               key={restaurant.id}
               position={{ lat: restaurant.lat, lng: restaurant.lng }}
               onClick={() => handleMarkerClick(restaurant.id)}
-              icon={createCustomMarkerIcon(restaurant.type, 40)}
             />
           ))}
         </GoogleMap>
