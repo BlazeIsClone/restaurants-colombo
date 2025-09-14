@@ -5,7 +5,6 @@ import { useCallback, useState } from "react";
 import restaurants from "@/data/restaurants.json";
 import { RestaurantDetails } from "./RestaurantDetails";
 import { createCustomMarkerIcon } from "@/utils/markerUtils";
-import { MarkerLegend } from "./MarkerLegend";
 import { Restaurant } from "@/types/restaurant";
 
 export const Map = () => {
@@ -60,7 +59,7 @@ export const Map = () => {
           <div
             key={restaurant.id}
             id={restaurant.id}
-            className={`restaurant mb-6 p-6 border rounded-lg shadow-sm bg-white hover:shadow-md transition-shadow duration-200`}
+            className={`restaurant my-6 p-6 border rounded-lg shadow-sm bg-white hover:shadow-md transition-shadow duration-200`}
           >
             <RestaurantDetails
               restaurant={restaurant as Restaurant}
@@ -71,7 +70,6 @@ export const Map = () => {
       </article>
 
       <div className="right-0 absolute w-[50%]">
-        <MarkerLegend className="absolute top-4 right-4 z-10" />
         <GoogleMap
           onLoad={onLoad}
           onUnmount={onUnmount}

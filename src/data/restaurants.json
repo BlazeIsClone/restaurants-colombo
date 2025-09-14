@@ -26,14 +26,11 @@
 		"address": "123 Galle Road, Colombo 03",
 		"rating": 8.2,
 		"perfect_for": [
-			"casual_dining",
-			"solo_dining",
-			"coffee_meeting"
+			"casual dining",
+			"solo dining",
+			"coffee meeting"
 		],
-		"deals": [
-			"$2_coffee_specials",
-			"happy_hour_3_5pm"
-		],
+		"deal": "2 coffees for $10, Happy Hour 3:00 PM - 5:00 PM",
 		"description": "A cozy cat-themed cafe serving artisanal coffee and light bites. Perfect for a relaxed morning coffee or afternoon work session.",
 		"reservation_link": "https://opentable.com/neko-and-kopi"
 	},
@@ -60,14 +57,11 @@
 		"address": "456 Horton Place, Colombo 07",
 		"rating": 7.8,
 		"perfect_for": [
-			"casual_dining",
-			"family_dining",
-			"dessert_lovers"
+			"casual dining",
+			"family dining",
+			"dessert lovers"
 		],
-		"deals": [
-			"buy_2_cakes_get_1_free",
-			"afternoon_tea_special"
-		],
+		"deal": "Buy 2 cakes get 1 free, Afternoon tea special",
 		"description": "Traditional English bakery offering freshly baked cakes, pastries, and afternoon tea. A delightful spot for families and dessert enthusiasts.",
 		"reservation_link": "https://opentable.com/english-cake-company"
 	},
@@ -93,15 +87,11 @@
 		"address": "789 Duplication Road, Colombo 03",
 		"rating": 9.1,
 		"perfect_for": [
-			"date_night",
-			"group_dining",
-			"fine_dining"
+			"date night",
+			"group dining",
+			"fine dining"
 		],
-		"deals": [
-			"$2_oysters",
-			"wine_pairing_menu",
-			"early_bird_special"
-		],
+		"deal": "Early bird special",
 		"description": "Authentic Italian fine dining experience with fresh pasta, premium wines, and elegant ambiance. Perfect for special occasions and romantic dinners.",
 		"reservation_link": "https://opentable.com/giovannis-colombo"
 	}

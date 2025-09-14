@@ -14,7 +14,7 @@ export const OpeningHours = ({ opening_hours }: OpeningHoursProps) => {
     };
 
     return (
-        <div className="flex items-center space-x-2 text-sm text-gray-600">
+        <div className="my-3 flex items-center space-x-2 text-sm text-gray-600">
             <svg
                 className="w-4 h-4 text-gray-500"
                 fill="none"

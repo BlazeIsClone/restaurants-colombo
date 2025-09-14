@@ -2,17 +2,10 @@ interface RatingDisplayProps {
     rating: number;
 }
 
-const getRatingColor = (rating: number) => {
-    if (rating >= 8.5) return 'bg-green-500';
-    if (rating >= 7.5) return 'bg-yellow-500';
-    if (rating >= 6.5) return 'bg-orange-500';
-    return 'bg-red-500';
-};
-
 export const RatingDisplay = ({ rating }: RatingDisplayProps) => {
     return (
         <div className="absolute top-4 right-4 z-10">
-            <div className={`${getRatingColor(rating)} text-white px-3 py-1 rounded-full shadow-lg flex items-center space-x-1`}>
+            <div className={`bg-blue-500 text-white px-3 py-1 rounded-full shadow-lg flex items-center space-x-1`}>
                 <svg
                     className="w-4 h-4"
                     fill="currentColor"

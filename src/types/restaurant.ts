@@ -15,7 +15,7 @@ export interface Restaurant {
     address: string;
     rating: number;
     perfect_for: string[];
-    deals: string[];
+    deal: string;
     description: string;
     reservation_link: string;
 }
