@@ -1,0 +1,49 @@
+[
+    {
+        "id": "top-10-brunch-spots-colombo",
+        "title": "Top 10 Brunch Spots in Colombo",
+        "description": "Discover the best places to enjoy a leisurely brunch in Colombo, from trendy cafes to traditional eateries serving up delicious morning meals.",
+        "featured_image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&h=600&fit=crop",
+        "featured_restaurants": [
+            "neko-and-kopi",
+            "the-english-cake-company",
+            "giovannis"
+        ]
+    },
+    {
+        "id": "best-fine-dining-colombo",
+        "title": "Best Fine Dining Restaurants in Colombo",
+        "description": "Experience culinary excellence at Colombo's finest restaurants, where world-class chefs create unforgettable dining experiences.",
+        "featured_image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&h=600&fit=crop",
+        "featured_restaurants": [
+            "giovannis"
+        ]
+    },
+    {
+        "id": "hidden-gem-cafes-colombo",
+        "title": "Hidden Gem Cafes in Colombo",
+        "description": "Explore Colombo's secret coffee spots and charming cafes that locals love, tucked away in quiet corners of the city.",
+        "featured_image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&h=600&fit=crop",
+        "featured_restaurants": [
+            "neko-and-kopi"
+        ]
+    },
+    {
+        "id": "family-friendly-restaurants-colombo",
+        "title": "Family-Friendly Restaurants in Colombo",
+        "description": "Find the perfect dining spots for families with kids, featuring spacious seating, kid-friendly menus, and welcoming atmospheres.",
+        "featured_image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&h=600&fit=crop",
+        "featured_restaurants": [
+            "the-english-cake-company"
+        ]
+    },
+    {
+        "id": "romantic-date-night-colombo",
+        "title": "Romantic Date Night Restaurants in Colombo",
+        "description": "Create unforgettable memories at Colombo's most romantic restaurants, perfect for special occasions and intimate dinners.",
+        "featured_image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&h=600&fit=crop",
+        "featured_restaurants": [
+            "giovannis"
+        ]
+    }
+]
