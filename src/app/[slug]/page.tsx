@@ -1,6 +1,6 @@
 "use client";
 
-import { GoogleMap, Marker, useJsApiLoader, OverlayView } from "@react-google-maps/api";
+import { GoogleMap, useJsApiLoader, OverlayView } from "@react-google-maps/api";
 import { useCallback, useState, useEffect, useRef, use, useMemo } from "react";
 import { RestaurantDetails } from "@/components/RestaurantDetails";
 import { Restaurant as RestaurantT } from "@/types/restaurant";
@@ -32,8 +32,8 @@ export default function DynamicPage({
     return article
       ? restaurants.filter((r) => article.featured_restaurants.includes(r.id))
       : restaurant
-        ? [restaurant]
-        : [];
+      ? [restaurant]
+      : [];
   }, [article, restaurant]);
 
   const onLoad = useCallback((map: google.maps.Map) => setMap(map), []);
@@ -228,7 +228,11 @@ export default function DynamicPage({
   );
 }
 
-function HTMLMarker({ position, isActive, onClick }: {
+function HTMLMarker({
+  position,
+  isActive,
+  onClick,
+}: {
   position: { lat: number; lng: number };
   isActive: boolean;
   onClick: () => void;
@@ -239,8 +243,9 @@ function HTMLMarker({ position, isActive, onClick }: {
       mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
     >
       <div
-        className={`absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-200 ${isActive ? "scale-110 z-10" : "scale-100 z-0"
-          }`}
+        className={`absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-200 ${
+          isActive ? "scale-110 z-10" : "scale-100 z-0"
+        }`}
         style={{
           width: isActive ? "40px" : "30px",
           height: isActive ? "40px" : "30px",
@@ -248,21 +253,22 @@ function HTMLMarker({ position, isActive, onClick }: {
         onClick={onClick}
       >
         <div
-          className={`w-full h-full rounded-full border-2 flex items-center justify-center ${isActive
-            ? "bg-black border-black shadow-lg"
-            : "bg-black border-black shadow-md"
-            }`}
+          className={`w-full h-full rounded-full border-2 flex items-center justify-center ${
+            isActive
+              ? "bg-black border-black shadow-lg"
+              : "bg-black border-black shadow-md"
+          }`}
         >
           <div className="w-1/3 h-1/3 bg-white rounded-full"></div>
         </div>
         {isActive && (
-          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-t-1/2
+          <div
+            className="absolute left-1/2 transform -translate-x-1/2 -translate-t-1/2
               w-0 h-0 border-l-4 border-r-4 border-t-6
-              border-l-transparent border-r-transparent border-t-black">
-          </div>
+              border-l-transparent border-r-transparent border-t-black"
+          ></div>
         )}
       </div>
     </OverlayView>
   );
 }
-
