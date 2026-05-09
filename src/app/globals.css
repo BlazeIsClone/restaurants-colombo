@@ -17,3 +17,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.bottom-sheet-transitioning {
+  transition: height 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

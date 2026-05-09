@@ -35,13 +35,18 @@
 		"reservation_link": "https://opentable.com/neko-and-kopi"
 	},
 	{
-		"id": "the-english-cake-company",
-		"name": "The English Cake Company",
-		"type": "bakery",
-		"lat": 6.891783432188516,
-		"lng": 79.871153255706,
-		"main_image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&h=600&fit=crop",
-		"gallery": [],
+		"id": "tango-restaurant-panadura",
+		"name": "Tango Restaurant – Panadura",
+		"type": "casual_dining",
+		"lat": 6.708219,
+		"lng": 79.90815649999999,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Tango-Restaurant-Panadura-entrance.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Tango-Restaurant-Panadura-dining.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Tango-Restaurant-Panadura-dinning-area-2.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Tango-Restaurant-Panadura-food-.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Tango-Restaurant-Panadura-dinning-area.webp"
+		],
 		"opening_hours": {
 			"days": [
 				"Monday",
@@ -52,27 +57,128 @@
 				"Saturday",
 				"Sunday"
 			],
-			"hours": "8:00 AM - 8:00 PM"
+			"hours": "11:00 AM - 11:00 PM"
 		},
-		"address": "456 Horton Place, Colombo 07",
-		"rating": 7.8,
+		"address": "528 Galle - Colombo Rd, Panadura 12500",
+		"rating": 8.0,
+		"perfect_for": [
+			"family dining"
+		],
+		"description": "Thai cuisine with a strong focus on seafood dishes."
+	},
+	{
+		"id": "taco-shack",
+		"name": "Taco Shack",
+		"type": "casual_dining",
+		"lat": 6.8937355999999985,
+		"lng": 79.86396979999999,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Taco-Shack-interior.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Taco-Shack-interior-2.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Taco-Shack-outdoor.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Taco-Shack-tacos.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Taco-Shack-food-3.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "10:00 AM - 10:00 PM"
+		},
+		"address": "35 D. S. Fonseka Rd, Colombo 00500",
+		"rating": 8.8,
 		"perfect_for": [
 			"casual dining",
 			"family dining",
-			"dessert lovers"
+			"group dining"
 		],
-		"deal": "Buy 2 cakes get 1 free, Afternoon tea special",
-		"description": "Traditional English bakery offering freshly baked cakes, pastries, and afternoon tea. A delightful spot for families and dessert enthusiasts.",
-		"reservation_link": "https://opentable.com/english-cake-company"
+		"description": "A dining spot located in Sri Lanka."
 	},
 	{
-		"id": "giovannis",
-		"name": "Giovanni's",
-		"type": "fine_dining",
-		"lat": 6.891751500259637,
-		"lng": 79.86805259507274,
-		"main_image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&h=600&fit=crop",
-		"gallery": [],
+		"id": "glayze-cafe",
+		"name": "Glayze Cafe",
+		"type": "cafe",
+		"lat": 6.8728836,
+		"lng": 79.88716459999999,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Glayze-Cafe-interior.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Glayze-Cafe-interiror.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Glayze-Cafe-chiken-wings.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Glayze-Cafe-baverages.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Glayze-Cafe-loaded-fries.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "9:00 AM - 11:00 PM"
+		},
+		"address": "55, 3 Railway Ave, Nugegoda 10250",
+		"rating": 9.6,
+		"perfect_for": [
+			"yes"
+		],
+		"description": "Glayze Café specializes in desserts, including waffles, brownies, cheesecakes, and beverages."
+	},
+	{
+		"id": "cove-cafe-lounge",
+		"name": "Cove Cafe & Lounge",
+		"type": "cafe",
+		"lat": 6.8801674,
+		"lng": 79.8752557,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Cove-Cafe-Lounge-interiror-.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Cove-Cafe-Lounge-entrance.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Cove-Cafe-Lounge-pizza.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Cove-Cafe-Lounge-pasta-and-fries.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Cove-Cafe-Lounge-pasta.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "10:00 AM - 10:00 PM"
+		},
+		"address": "34, 4 Kirulapone Ave, Colombo 00500",
+		"rating": 9.0,
+		"perfect_for": [
+			"casual dining",
+			"remote work",
+			"date night"
+		],
+		"description": "A café and lounge serving Italian-inspired dishes including pizzas, pastas, and fries in a calm, Wi-Fi-friendly environment."
+	},
+	{
+		"id": "truffles-pizzeria",
+		"name": "Truffles Pizzeria",
+		"type": "casual_dining",
+		"lat": 6.905565999999999,
+		"lng": 79.8775591,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Truffles-Pizzeria-main-banner.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Truffles-Pizzeria-interior.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Truffles-Pizzeria-pizza.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Truffles-Pizzeria-food-piza-4.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Truffles-Pizzeria-food-desert.webp"
+		],
 		"opening_hours": {
 			"days": [
 				"Tuesday",
@@ -82,17 +188,382 @@
 				"Saturday",
 				"Sunday"
 			],
-			"hours": "6:00 PM - 11:00 PM"
+			"hours": "3:00 AM - 11:00 PM"
 		},
-		"address": "789 Duplication Road, Colombo 03",
-		"rating": 9.1,
+		"address": "69, 2 Elvitigala Mawatha, Colombo 08",
+		"rating": 9.6,
+		"perfect_for": [
+			"casual dining",
+			"family dining",
+			"group dining"
+		],
+		"description": "Truffles Pizzeria specializes in pizzas, along with a variety of pastas, sides, and beverages."
+	},
+	{
+		"id": "coffee-break",
+		"name": "Coffee Break",
+		"type": "cafe",
+		"lat": 6.8935,
+		"lng": 79.8553,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Coffee-Break-interior.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Coffee-Break-interior-2.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Coffee-Break-entrance.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Coffee-Break-interior-1.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/04/Coffee-Break-breakfast-and-coffee.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "8:00 AM - 9:00 PM"
+		},
+		"address": "25/1 Station Rd, Colombo 00400",
+		"rating": 9.4,
+		"perfect_for": [
+			"breakfast",
+			"coffee lovers",
+			"casual dining"
+		],
+		"description": "A cosy café in Bambalapitiya offering Sri Lankan–Western fusion dishes alongside specialty coffee and breakfast options."
+	},
+	{
+		"id": "neko-kopi-catfe",
+		"name": "Neko & Kopi Catfé",
+		"type": "cafe",
+		"lat": 6.8888296,
+		"lng": 79.88710209999999,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/03/neko-and-kopi-main-banner.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/03/neko-and-kopi-interior-banner.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/03/neko-and-kopi-front.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/03/neko-and-kopi-dish-1.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/03/neko-and-kopi-susi-dish.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "09:00 AM - 09:00 PM"
+		},
+		"address": "319/4, 05 Nawala Rd, Colombo 00500",
+		"rating": 9.6,
+		"perfect_for": [
+			"cat lovers",
+			"casual dining",
+			"coffee meeting"
+		],
+		"description": "A cat café serving Japanese-inspired dishes including ramen, katsu curry, and soufflé pancakes, alongside specialty coffee and teas."
+	},
+	{
+		"id": "mama-pudditat",
+		"name": "Mama Pudditat",
+		"type": "cafe",
+		"lat": 6.886077693112942,
+		"lng": 79.92951637499614,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/01/mama-puditat-banner.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/01/mama-puditat-banner-1.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/01/Mama-Pudditat-food.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/01/Mama-Pudditat-cake-pieses.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2026/01/Mama-Pudditat-patiies.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "10:00 AM - 7:30 PM"
+		},
+		"address": "Pelawatta, Battaramulla, Sri Lanka",
+		"rating": 9.6,
+		"perfect_for": [
+			"dessert lovers",
+			"casual dining",
+			"family dining"
+		],
+		"description": "A cosy café and dessert spot in Battaramulla known for cakes, pastries, and sweet treats, popular for casual hangouts."
+	},
+	{
+		"id": "the-buttercup-restaurant",
+		"name": "The Buttercup Restaurant",
+		"type": "cafe",
+		"lat": 6.8450622999999995,
+		"lng": 79.9346724,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/12/The-Buttercup-Restaurant-1.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/12/The-Buttercup-Restaurant-2.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/12/The-Buttercup-Restaurant-5.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/12/The-Buttercup-Restaurant-3.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/12/The-Buttercup-Restaurant-food-1.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Monday",
+				"Tuesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "11:00 AM - 11:00 PM"
+		},
+		"address": "221 High Level Road, Maharagama, Sri Lanka",
+		"rating": 8.2,
+		"perfect_for": [
+			"coffee lovers",
+			"casual dining",
+			"remote work"
+		],
+		"description": "A dining spot located in Sri Lanka."
+	},
+	{
+		"id": "lounge-171",
+		"name": "Lounge 171",
+		"type": "bar",
+		"lat": 6.8584031931400675,
+		"lng": 79.91322467499593,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/12/Lounge-171-main-banner-scaled.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/12/Lounge-171-dish.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/12/Lounge-171-dish-2.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/12/Lounge-171-dish-3.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/12/Lounge-171-dish-4.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "8:00 AM - 10:00 PM"
+		},
+		"address": "171/1 Old Kottawa Rd, Maharagama, Sri Lanka, 10280",
+		"rating": 8.8,
 		"perfect_for": [
 			"date night",
 			"group dining",
-			"fine dining"
+			"casual dining"
 		],
-		"deal": "Early bird special",
-		"description": "Authentic Italian fine dining experience with fresh pasta, premium wines, and elegant ambiance. Perfect for special occasions and romantic dinners.",
-		"reservation_link": "https://opentable.com/giovannis-colombo"
+		"description": "A spacious multi-cuisine lounge offering grills, Asian fusion, Italian, and seafood dishes in a relaxed Maharagama setting."
+	},
+	{
+		"id": "mamas-pot-bakery",
+		"name": "Mama’s Pot Bakery",
+		"type": "bakery",
+		"lat": 6.903598100000001,
+		"lng": 79.85638569999999,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/10/Mamas-Pot-Bakery.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/10/Mamas-Pot-Bakery-5.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/10/Mamas-Pot-Bakery-3.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/10/Mamas-Pot-Bakery-2.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/10/Mamas-Pot-Bakery-1.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "10:00 AM - 10:00 PM"
+		},
+		"address": "2 Charles Dr, Colombo 00300",
+		"rating": 7.0,
+		"perfect_for": [
+			"dessert lovers",
+			"gifting",
+			"casual dining"
+		],
+		"description": "A home-based artisan bakery offering baked goods and gift boxes. Orders via Instagram DMs; occasional walk-in days announced."
+	},
+	{
+		"id": "nook-cafe-mount-lavinia",
+		"name": "Nook Café – Mount Lavinia",
+		"type": "cafe",
+		"lat": 6.8545,
+		"lng": 79.864,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/10/nook-cafe-out-door.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/10/nook-cafe-outdoor.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/10/nook-cafe-burger.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/10/nook-cafe-dish-2.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/10/nook-cafe-wrap.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "08:00 AM - 10:00 PM"
+		},
+		"address": "102 Galle Rd, Dehiwala-Mount Lavinia 10370",
+		"rating": 9.4,
+		"perfect_for": [
+			"casual dining",
+			"coffee lovers",
+			"solo dining"
+		],
+		"description": "An outdoor café on Galle Road in Mount Lavinia serving burgers, wraps, pancakes, and specialty coffee."
+	},
+	{
+		"id": "hazel-cafe-cakery",
+		"name": "Hazel Café & Cakery",
+		"type": "bakery",
+		"lat": 6.89439019310477,
+		"lng": 79.85467127499626,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/Hazel-Cafe-Cakery-interior.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/Hazel-Cafe-Cakery-ambis.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/Hazel-Cafe-Cakery-walle.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/Hazel-Cafe-Cakery-pasta.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/Hazel-Cafe-Cakery-crossents.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Sunday"
+			],
+			"hours": "9:00 AM - 7:30 PM"
+		},
+		"address": "20A Laurie’s Place, R. A. De Mel Mawatha, Colombo, Bambalapitiya 00400",
+		"rating": 7.0,
+		"perfect_for": [
+			"breakfast",
+			"dessert lovers",
+			"coffee lovers"
+		],
+		"description": "A bakery café serving pastries, cakes, waffles, croissants, and specialty coffee in a cosy Bambalapitiya setting."
+	},
+	{
+		"id": "kurundu-piliyandala",
+		"name": "Kurundu – Piliyandala",
+		"type": "casual_dining",
+		"lat": 6.810146993187418,
+		"lng": 79.91808407499543,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/kurundu-piliyandala-main-entrance-nigth.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/kurundu-piliyandala-main-entrance.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/kurundu-piliyandala-dining-.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/kurundu-piliyandala-dining-side.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/kurundu-piliyandala-vege-soup.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "11:30 AM - 12:00 AM"
+		},
+		"address": "433, 2 Colombo - Horana Rd, Piliyandala",
+		"rating": 7.0,
+		"perfect_for": [
+			"family dining",
+			"group dining",
+			"casual dining"
+		],
+		"description": "A multi-cuisine restaurant in Piliyandala with a wide menu spanning Sri Lankan, Indian, Chinese, Italian, and Mongolian dishes."
+	},
+	{
+		"id": "daily-dough-by-brown-sugar",
+		"name": "Daily Dough by Brown Sugar",
+		"type": "cafe",
+		"lat": 6.9089,
+		"lng": 79.8656,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/Daily-Dough-by-Brown-Sugar-outdoor-seating.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/Daily-Dough-by-Brown-Sugar-1.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/Daily-Dough-by-Brown-Sugar-front-.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/Daily-Dough-by-Brown-Sugar-food.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/09/Daily-Dough-by-Brown-Sugar-crosent.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Monday",
+				"Tuesday",
+				"Thursday",
+				"Friday",
+				"Sunday"
+			],
+			"hours": "7:00 AM - 9:00 PM"
+		},
+		"address": "54C Ward Pl, Colombo 00700",
+		"rating": 9.4,
+		"perfect_for": [
+			"breakfast",
+			"coffee lovers",
+			"dessert lovers"
+		],
+		"description": "A popular artisan café and bakery in Colombo 7 known for croissants, sourdough, and specialty coffee."
+	},
+	{
+		"id": "chill-colombo",
+		"name": "Chill Colombo",
+		"type": "bar",
+		"lat": 6.931465893068407,
+		"lng": 79.8384604749966,
+		"main_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/07/Chill-Colombo-1.webp",
+		"gallery": [
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/07/Chill-Colombo-exterior.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/07/Chill-Colombo-drink.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/07/Chill-Colombo-sweet.webp",
+			"https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/07/Chill-Colombo-main-dish.webp"
+		],
+		"opening_hours": {
+			"days": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"hours": "11:00 AM - 11:00 PM"
+		},
+		"address": "Port City, Down Town Duty Free Mall, Chaithya Rd, Colombo 00100",
+		"rating": 7.0,
+		"perfect_for": [
+			"casual dining",
+			"group dining",
+			"date night"
+		],
+		"description": "A vibrant dining and entertainment spot at Colombo Port City, offering grills, Asian fusion, and refreshing beverages."
 	}
 ]

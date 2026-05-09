@@ -6,6 +6,22 @@ import { OpeningHours } from "./OpeningHours";
 import { PerfectFor } from "./PerfectFor";
 import { Deal } from "./Deal";
 
+const TYPE_LABELS: Record<string, string> = {
+  cafe: "Cafe",
+  bakery: "Bakery",
+  fine_dining: "Fine Dining",
+  casual_dining: "Casual Dining",
+  bar: "Bar",
+};
+
+const TYPE_COLORS: Record<string, string> = {
+  cafe: "bg-amber-100 text-amber-700",
+  bakery: "bg-orange-100 text-orange-700",
+  fine_dining: "bg-purple-100 text-purple-700",
+  casual_dining: "bg-green-100 text-green-700",
+  bar: "bg-rose-100 text-rose-700",
+};
+
 interface RestaurantDetailsProps {
   restaurant: Restaurant;
   onNameClick?: () => void;
@@ -24,11 +40,18 @@ export const RestaurantDetails = ({
       />
       <div className="my-3">
         <h2
-          className="text-2xl font-bold text-gray-900 mb-2 cursor-pointer hover:text-blue-600 transition-colors duration-200 flex items-center gap-2"
+          className="text-2xl font-bold text-gray-900 mb-1.5 cursor-pointer hover:text-gray-600 transition-colors duration-200"
           onClick={onNameClick}
         >
           {restaurant.name}
         </h2>
+        <span
+          className={`inline-block text-xs font-medium px-2 py-0.5 rounded-full ${
+            TYPE_COLORS[restaurant.type] ?? "bg-gray-100 text-gray-600"
+          }`}
+        >
+          {TYPE_LABELS[restaurant.type] ?? restaurant.type}
+        </span>
       </div>
       <OpeningHours opening_hours={restaurant.opening_hours} />
       <div className="my-2 flex items-start space-x-2 text-sm text-gray-600">

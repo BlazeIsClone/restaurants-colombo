@@ -1,13 +1,25 @@
 [
     {
-        "id": "top-10-brunch-spots-colombo",
-        "title": "Top 10 Brunch Spots in Colombo",
+        "id": "top-restaurants-april-colombo",
+        "title": "Top April Restaurants in Colombo",
         "description": "Discover the best places to enjoy a leisurely brunch in Colombo, from trendy cafes to traditional eateries serving up delicious morning meals.",
         "featured_image": "https://www.restaurantsinsrilanka.com/wp-content/uploads/2025/03/cafe-kubuk-interior.webp",
         "featured_restaurants": [
-            "neko-and-kopi",
-            "the-english-cake-company",
-            "giovannis"
+            "tango-restaurant-panadura",
+            "taco-shack",
+            "glayze-cafe",
+            "cove-cafe-lounge",
+            "truffles-pizzeria",
+            "coffee-break",
+            "neko-kopi-catfe",
+            "mama-pudditat",
+            "the-buttercup-restaurant",
+            "lounge-171",
+            "mamas-pot-bakery",
+            "nook-cafe-mount-lavinia",
+            "hazel-cafe-cakery",
+            "kurundu-piliyandala",
+            "daily-dough-by-brown-sugar"
         ]
     }
 ]

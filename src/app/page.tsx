@@ -8,11 +8,14 @@ export default function Home() {
     <div className="min-h-screen">
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-12">
+          <p className="text-xs uppercase tracking-widest text-gray-400 mb-3">
+            Restaurant Guide · Colombo
+          </p>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Restaurant Guides for Colombo
+            Find your next meal
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover the best dining experiences in Colombo through our curated guides. From brunch spots to fine dining, find your perfect meal.
+          <p className="text-lg text-gray-500 max-w-xl mx-auto">
+            Curated guides to the best restaurants in Colombo, with maps to get you there.
           </p>
         </div>
 
